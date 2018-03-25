@@ -61,24 +61,4 @@ def obrabotka(data, event):
      for i in range(1,len(poizdprom)+1,1):
          poizd['cars'].pop()
      poizdto['cars'].extend(poizdprom)
-
-     '''     vagon = poiskponum(poizd, poizd['count'] - 1)
-     vagon['num']=0
-     poizdprom['cars'] = [vagon]
-     poizd['cars'].pop()
-     poizd['count'] -= 1
-     poizdprom['count']=n
-     for i in range(1,n,1):
-       vagon=poiskponum(poizd,poizd['count']-1)
-       vagon['num'] = i
-       poizdprom['cars'].append(vagon)
-       poizd['cars'].pop()
-       poizd['count'] -= 1
-     for k in range(0,n,1):
-       vagon=poiskponum(poizdprom,poizdprom['count']-1)
-       vagon['num']=poizdto['count']
-       poizdto['cars'].append(vagon)
-       poizdto['count']+=1
-       poizdprom['cars'].pop()
-       poizdprom['count'] -= 1'''
      return data
